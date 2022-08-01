@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import React from 'react'
 import 'bulma/css/bulma.css'
 import { useWeb3React } from "@web3-react/core"
-import { injected } from "../components/wallet/Connectors"
+import { injected } from "../components/wallet/connectors"
 
 export default function Home() { 
     const [isActive, setisActive] = React.useState(false)

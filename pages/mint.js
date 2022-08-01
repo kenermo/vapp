@@ -37,12 +37,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
      
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-brand"> 
-        <div class="columns navbar-item">
-            <div class="column is-half"><h1>VIP CLUB!!</h1> </div>
-            <div class="column">{active ?"":<button onClick={connect} className="button is-primary is-medium">Connect Wallet</button>} 
+  <nav className="navbar">
+    <div className="container">
+      <div className="navbar-brand"> 
+        <div className="columns navbar-item">
+            <div className="column is-half"><h1>VIP CLUB!! !</h1> </div>
+            <div className="column">{active ?"":<button onClick={connect} className="button is-primary is-medium">Connect Wallet</button>} 
             {active ? <span className="loginedusername">  {account} </span> : ''} 
             {active ?<button onClick={disconnect} className="button is-danger is-small ">Disconnect</button>:''} </div> 
         </div>
@@ -63,27 +63,27 @@ export default function Home() {
         </a>
       </div>
       <div id="navbarMenu" className={`navbar-menu ${isActive ? 'is-active' : ''}`}> 
-      <div class="navbar-end"> 
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
+      <div className="navbar-end"> 
+          <a className="navbar-item is-size-5 has-text-weight-semibold">
             Home
           </a>
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
+          <a className="navbar-item is-size-5 has-text-weight-semibold">
             My Cards
           </a> 
       </div>
       </div>
     </div>
   </nav>
-  <div class="tile is-ancestor"> 
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-success">
-      <div class="content">
-        <p class="title"> VIP CARD Day </p>
-        <p class="subtitle">Members only</p>
-        <div class="content">
+  <div className="tile is-ancestor"> 
+  <div className="tile is-parent">
+    <article className="tile is-child notification is-success">
+      <div className="content">
+        <p className="title"> VIP CARD Day </p>
+        <p className="subtitle">Members only</p>
+        <div className="content">
           Coupon 80% Off
         </div>
-        <p class="actionctr"> {active ? <button onClick={redeem} className="button is-warning is-normal">Redeem</button>  : <button className="button is-default">Redeem</button>}</p>
+        <p className="actionctr"> {active ? <button onClick={redeem} className="button is-warning is-normal">Redeem</button>  : <button className="button is-default">Redeem</button>}</p>
       </div>
     </article>
   </div>
